@@ -1,16 +1,25 @@
 .App {
   text-align: center;
+  text-align: -webkit-center;
 }
 
 .App-logo {
+  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
-  pointer-events: none;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.div-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-row {
+  display: flex;
+}
+
+.App-logo-paused {
+  animation-play-state: paused;
 }
 
 .App-header {
@@ -23,11 +32,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +42,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.taskInput {
+  min-width: 365px;
+  margin-right: 10px;
+}
+
+.tasks {
+  margin-top: 30px;
+  width: 100%;
 }
