@@ -31,7 +31,8 @@ function Routes() {
             <Route exact path="/">
               {(props) => (
                 <div>
-                  <Home {...props} />
+                  {/* <Home {...props} /> */}
+                  <TodoInput {...props} />
                 </div>
               )}
             </Route>
